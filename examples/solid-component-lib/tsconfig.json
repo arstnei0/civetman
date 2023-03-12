@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"moduleResolution": "Node",
+		"module": "ESNext",
+		"target": "ESNext",
+		"outDir": "dist",
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js"
+	}
+}

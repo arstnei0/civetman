@@ -1,0 +1,5 @@
+export Counter := (props: 
+		initial?: number
+	) => 
+	count := atom props.initial ?? 0
+	<button onClick={=> count count() + 1}>Increase: {count()}
