@@ -4,7 +4,7 @@
     <p>Use <a href="https://civet.dev/">Civet</a> in any project.</p>
 </div>
 
-Civet is not working with many different bundlers? Bad integration with pure TypeScript files? No problem!
+Civet not working? Bad integration with pure TypeScript files? No problem!
 
 ## Usage
 
@@ -26,3 +26,4 @@ Several examples are available in the `examples` directory.
 
 -   [Basic example](https://github.com/zihan-ch/civetman/tree/main/examples/basic)
 -   [Vanilla Extact example](https://github.com/zihan-ch/civetman/tree/main/examples/astro-vanilla-extract)
+-   [Solid component library example](https://github.com/zihan-ch/civetman/tree/main/examples/solid-component-lib)

@@ -1,19 +1,20 @@
 {
-	"name": "astro-vanilla-extract",
+	"name": "astro-vanilla-extract-example",
 	"type": "module",
-	"version": "0.0.1",
+	"private": true,
+	"version": "0.0.2",
 	"scripts": {
-		"dev": "civetman dev & astro dev",
-		"start": "civetman dev & astro dev",
-		"build": "civetman build & astro build",
+		"dev": "civetman dev --noGit & astro dev",
+		"start": "civetman dev --noGit & astro dev",
+		"build": "civetman build --noGit & astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"postinstall": "civetman build"
+		"postinstall": "civetman build --noGit"
 	},
 	"dependencies": {
 		"@vanilla-extract/css": "^1.10.0",
 		"astro": "^2.1.2",
-		"astro-vanilla-extract": "^2.0.0",
+		"astro-vanilla-extract": "^0.0.2",
 		"civetman": "workspace:*"
 	}
 }

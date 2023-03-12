@@ -1,14 +1,14 @@
 {
 	"name": "basic",
-	"private": "true",
-	"version": "0.0.2",
+	"private": true,
+	"version": "0.0.3",
 	"type": "module",
 	"scripts": {
-		"build": "civetman build && vite build",
-		"test": "civetman build && vitest run",
-		"coverage": "civetman build && vitest run --coverage",
-		"dev": "civetman dev & vitest dev",
-		"postinstall": "civetman build"
+		"build": "civetman build --noGit && vite build",
+		"test": "civetman build --noGit && vitest run",
+		"coverage": "civetman build --noGit && vitest run --coverage",
+		"dev": "civetman dev --noGit & vitest dev",
+		"postinstall": "civetman build --noGit"
 	},
 	"dependencies": {
 		"civetman": "workspace:*",

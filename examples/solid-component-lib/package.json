@@ -1,13 +1,14 @@
 {
 	"name": "solid-component-lib",
-	"version": "0.0.1",
+	"private": true,
+	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
-		"build": "civetman build -x && vite build",
-		"dev": "civetman dev -x & vite dev"
+		"build": "civetman build --noGit -x && vite build",
+		"dev": "civetman dev --noGit -x & vite dev"
 	},
 	"dependencies": {
-		"civetman": "workspace:^0.0.2",
+		"civetman": "workspace:^0.0.3",
 		"solid-js": "^1.6.11",
 		"solid-use": "^0.7.0",
 		"type-fest": "^3.5.7",
