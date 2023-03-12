@@ -1,8 +1,8 @@
-<center>
+<div align="center">
     <img src="https://user-images.githubusercontent.com/13007891/210392977-03a3b140-ec63-4ce9-b6e3-0a0f7cac6cbe.png" width="50%">
     <h1>Civetman</h1>
     <p>Use <a href="https://civet.dev/">Civet</a> in any project.</p>
-</center>
+</div>
 
 Civet is not working with many different bundlers? Bad integration with pure TypeScript files? No problem!
 
