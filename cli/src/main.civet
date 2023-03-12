@@ -57,7 +57,7 @@ addVscodeConfigFileExclude := debounce(async (files: string[]) =>
 
     await fs.ensureDir vscodeConfigDir
     await fs.ensureFile vscodeConfigFile
-    vscconfig := JSON.parse (await fs.readFile vscodeConfigFile).toString()
+    vscconfig := JSON.parse (await fs.readFile vscodeConfigFile).toString().trim() || "{}"
     if !vscconfig[vscodeConfigFileExludeKey] then vscconfig[vscodeConfigFileExludeKey] = {}
 
     found .= false

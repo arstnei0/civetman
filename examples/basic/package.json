@@ -1,6 +1,7 @@
 {
-	"name": "base",
-	"version": "0.0.0",
+	"name": "basic",
+	"private": "true",
+	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
 		"build": "civetman build && vite build",

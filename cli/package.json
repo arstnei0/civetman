@@ -1,8 +1,11 @@
 {
 	"name": "civetman",
 	"description": "No more pain about civet!",
-	"version": "0.0.0",
+	"version": "0.0.2",
 	"type": "module",
+	"bin": {
+		"civetman": "./dist/index.js"
+	},
 	"scripts": {
 		"build": "vite build",
 		"format": "prettier --write . --plugin-search-dir .",
@@ -26,8 +29,8 @@
 		"vite": "^4.1.1",
 		"vite-plugin-civet": "^0.2.5"
 	},
-	"bin": {
-		"civetman": "./dist/index.js"
+	"publishConfig": {
+		"access": "public"
 	},
 	"files": [
 		"./dist/**/*",
