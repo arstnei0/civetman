@@ -6,6 +6,13 @@
 
 Civet not working? Bad integration with pure TypeScript files? No problem!
 
+## Table of Content
+
+-   [Usage](#usage)
+-   [How it works](#how-it-works)
+-   [Examples](#examples)
+-   [Documentation](#documentation)
+
 ## Usage
 
 First install npm package `civetman` (e.g. `pnpm add civetman`). Then, add `civetman dev` to your `dev` or `start` script in `package.json`, add `civetman build` to your build script. Now you can use `.civet` files. All the imports don't need the suffix `.civet` anymore, meaning that `.civet` files are treated the same as TypeScript files.
@@ -27,3 +34,25 @@ Several examples are available in the `examples` directory.
 -   [Basic example](https://github.com/zihan-ch/civetman/tree/main/examples/basic)
 -   [Vanilla Extact example](https://github.com/zihan-ch/civetman/tree/main/examples/astro-vanilla-extract)
 -   [Solid component library example](https://github.com/zihan-ch/civetman/tree/main/examples/solid-component-lib)
+
+## Documentation
+
+CLI documentation:
+
+```ts
+Usage: civetman [options] [command]
+
+Use Civet in any projects!
+
+Options:
+    -V, --version     output the version number
+    -x, --tsx, --jsx  Generate `.tsx` files instead of `.ts` files
+    --noGit           Civetman without writing `.gitignore` file
+    --noVscode        Civetman without writing `.vscode/settings.json` file
+    -h, --help        display help for command
+
+Commands:
+    build             Start building Civet files
+    dev               Start building Civet files in watch mode
+    help [command]    display help for command
+```
