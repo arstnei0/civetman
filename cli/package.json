@@ -1,0 +1,36 @@
+{
+	"name": "civetman",
+	"description": "No more pain about civet!",
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"format": "prettier --write . --plugin-search-dir .",
+		"dev": "vite build --watch"
+	},
+	"dependencies": {
+		"@danielx/civet": "^0.5.86",
+		"chokidar": "^3.5.3",
+		"commander": "^10.0.0",
+		"fast-glob": "^3.2.12",
+		"fs-extra": "^11.1.0",
+		"ora": "^6.1.2",
+		"picocolors": "^1.0.0",
+		"type-fest": "^3.5.7",
+		"typescript": "^4.9.5"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^11.0.1",
+		"@types/node": "^18.13.0",
+		"prettier": "^2.8.4",
+		"vite": "^4.1.1",
+		"vite-plugin-civet": "^0.2.5"
+	},
+	"bin": {
+		"civetman": "./dist/index.js"
+	},
+	"files": [
+		"./dist/**/*",
+		"tsconfig.json"
+	]
+}
