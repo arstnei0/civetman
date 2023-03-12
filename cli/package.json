@@ -1,7 +1,7 @@
 {
 	"name": "civetman",
 	"description": "No more pain about civet!",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"bin": {
 		"civetman": "./dist/index.js"
@@ -10,8 +10,7 @@
 		"build": "vite build",
 		"format": "prettier --write . --plugin-search-dir .",
 		"dev": "vite build --watch",
-		"prepublish": "pnpm build",
-		"postinstall": "vite build"
+		"prepublish": "pnpm build"
 	},
 	"dependencies": {
 		"@danielx/civet": "^0.5.86",
