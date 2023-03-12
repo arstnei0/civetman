@@ -1,0 +1,19 @@
+{
+	"name": "astro-vanilla-extract",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "civetman dev & astro dev",
+		"start": "civetman dev & astro dev",
+		"build": "civetman build & astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"postinstall": "civetman build"
+	},
+	"dependencies": {
+		"@vanilla-extract/css": "^1.10.0",
+		"astro": "^2.1.2",
+		"astro-vanilla-extract": "^2.0.0",
+		"civetman": "workspace:*"
+	}
+}

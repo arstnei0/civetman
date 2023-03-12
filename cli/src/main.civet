@@ -86,7 +86,7 @@ addGitignore := debounce(
         spinner := ora c.blue """Adding files to .gitignore"""
         spinner.start()
 
-        await fs.ensureFile vscodeConfigFile
+        await fs.ensureFile gitignoreFile
         gitignore := await fs.readFile gitignoreFile, "utf8"
         start := gitignore.indexOf gitignoreStart
         before := start === -1 ? gitignore : gitignore.slice 0, start

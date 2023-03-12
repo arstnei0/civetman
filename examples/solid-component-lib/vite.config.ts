@@ -18,12 +18,7 @@ export default defineConfig({
 	plugins: [
 		AutoImport({
 			dts: "./src/auto-imports.generated.d.ts",
-			imports: [
-				"solid-js",
-				{
-					"solid-use/atom": [["default", "atom"]],
-				},
-			],
+			imports: ["solid-js", { "solid-use/atom": [["default", "atom"]] }],
 			dirs: ["src/components"],
 			defaultExportByFilename: true,
 		}),

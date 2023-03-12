@@ -1,7 +1,7 @@
 <center>
     <img src="https://user-images.githubusercontent.com/13007891/210392977-03a3b140-ec63-4ce9-b6e3-0a0f7cac6cbe.png" width="50%">
     <h1>Civetman</h1>
-    <p>Use Civet in any project.</p>
+    <p>Use <a href="https://civet.dev/">Civet</a> in any project.</p>
 </center>
 
 Civet is not working with many different bundlers? Bad integration with pure TypeScript files? No problem!
@@ -17,3 +17,12 @@ When you run `pnpm civetman build` (the same as `npx civetman build`), Civetman 
 What? You can't see the `.ts` files generated? That's because Civetman automatically put all the generated `.ts` files into the `files.exclude` in the `.vscode/settings.json` file. Then VSCode will hide all the bundled files in the file explorer. Those files are also added to `.gitignore` so that they won't be included by Git.
 
 `civetman dev` is basically just building your files when they are changed.
+
+It's recommended to add `civetman build` to the `postinstall` script in your `package.json`.
+
+## Examples
+
+Several examples are available in the `examples` directory.
+
+-   [Basic example](https://github.com/zihan-ch/civetman/tree/main/examples/basic)
+-   [Vanilla Extact example](https://github.com/zihan-ch/civetman/tree/main/examples/astro-vanilla-extract)
