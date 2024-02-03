@@ -1,8 +1,10 @@
 {
 	"name": "civetman",
 	"description": "No more pain about civet!",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
+	"repository": "https://github.com/arstnei0/civetman",
+	"homepage": "https://github.com/arstnei0/civetman",
 	"bin": {
 		"civetman": "./dist/index.js"
 	},
